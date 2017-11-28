@@ -1,0 +1,90 @@
+<eMail>
+	<ServerInfo>
+		<name>IPHGAReadLog</name>
+		<mailServer>outlook.office365.com</mailServer>
+		<mailFrom>tamphone@bluepointsolutions.com</mailFrom>
+		<mailTo>Support@bluepointsolutions.com</mailTo>
+		<mailSub>Lifeboat Release file count.</mailSub>
+	</ServerInfo>
+	<ServerInfo>
+		<name>CarLar Error</name>
+		<mailServer>outlook.office365.com</mailServer>
+		<mailFrom>tamphone@bluepointsolutions.com</mailFrom>
+		<mailTo>Support@bluepointsolutions.com</mailTo>
+		<mailSub>CARLAR errors in the current LOG file.</mailSub>
+	</ServerInfo>
+	<ServerInfo>
+		<name>No CarLar</name>
+		<mailServer>outlook.office365.com</mailServer>
+		<mailFrom>tamphone@bluepointsolutions.com</mailFrom>
+		<mailTo>Support@bluepointsolutions.com</mailTo>
+		<mailSub>Unable to parse CARLAR LOG file.</mailSub>
+	</ServerInfo>
+	<ServerInfo>
+		<name>No CarLar Log</name>
+		<mailServer>outlook.office365.com</mailServer>
+		<mailFrom>tamphone@bluepointsolutions.com</mailFrom>
+		<mailTo>Support@bluepointsolutions.com</mailTo>
+		<mailSub>Unable to parse CARLAR LOG file.</mailSub>
+	</ServerInfo>
+	<ServerInfo>
+		<name>Recover</name>
+		<mailServer>outlook.office365.com</mailServer>
+		<mailFrom>tamphone@bluepointsolutions.com</mailFrom>
+		<mailTo>Support@bluepointsolutions.com</mailTo>
+		<mailSub>FYI - Now able to parse the LOG file.</mailSub>
+	</ServerInfo>
+	<ServerInfo>
+		<name>No Error</name>
+		<mailServer>outlook.office365.com</mailServer>
+		<mailFrom>tamphone@bluepointsolutions.com</mailFrom>
+		<mailTo>Support@bluepointsolutions.com</mailTo>
+		<mailSub>FYI - CARLAR Service Restarted.</mailSub>
+	</ServerInfo>
+	<ServerInfo>
+		<name>Many Files</name>
+		<mailServer>outlook.office365.com</mailServer>
+		<mailFrom>tamphone@bluepointsolutions.com</mailFrom>
+		<mailTo>Support@bluepointsolutions.com</mailTo>
+		<mailSub>Check IPFArchive Import Service on DC-FS01.DC.BLUEPOINT.COM</mailSub>
+	</ServerInfo>
+	<ServerInfo>
+		<name>Error Files</name>
+		<mailServer>outlook.office365.com</mailServer>
+		<mailFrom>tamphone@bluepointsolutions.com</mailFrom>
+		<mailTo>Support@bluepointsolutions.com</mailTo>
+		<mailSub>Check IPFArchive import folders on DC-FS01.DC.BLUEPOINT.COM.</mailSub>
+	</ServerInfo>
+	<ServerInfo>
+		<name>No Files</name>
+		<mailServer>outlook.office365.com</mailServer>
+		<mailFrom>tamphone@bluepointsolutions.com</mailFrom>
+		<mailTo>Support@bluepointsolutions.com</mailTo>
+		<mailSub>Unable to Check IPFArchive import folder on DC-FS01.DC.BLUEPOINT.COM.</mailSub>
+	</ServerInfo>
+	<ServerInfo>
+		<name>No SSOLog</name>
+		<mailServer>outlook.office365.com</mailServer>
+		<mailFrom>tamphone@bluepointsolutions.com</mailFrom>
+		<mailTo>Support@bluepointsolutions.com</mailTo>
+		<mailSub>Unable to Check SSO Log.</mailSub>
+	</ServerInfo>
+	<ServerInfo>
+		<name>Files Recovery</name>
+		<mailServer>outlook.office365.com</mailServer>
+		<mailFrom>tamphone@bluepointsolutions.com</mailFrom>
+		<mailTo>Support@bluepointsolutions.com</mailTo>
+		<mailSub>FYI - Now able to connect to IPFArchive on DC-FS01.DC.BLUEPOINT.COM.</mailSub>
+	</ServerInfo>
+	<ServerInfo>
+		<name>Channel Error</name>
+		<mailServer>outlook.office365.com</mailServer>
+		<mailFrom>tamphone@bluepointsolutions.com</mailFrom>
+		<mailTo>tamphone@bluepointsolutions.com</mailTo>
+		<mailSub>Channel errors in the current SSO Processor LOG file.</mailSub>
+	</ServerInfo>
+	<User>
+		<UN>tamphone@bluepointsolutions.com</UN>
+		<PW>TamPS1221</PW>
+	</User>
+</eMail>

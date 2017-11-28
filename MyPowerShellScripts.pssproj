@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>6CAFC0C6-A428-4d30-A9F9-700E829FEA51</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MyApplication</RootNamespace>
+    <AssemblyName>MyApplication</AssemblyName>
+    <Name>MyPowerShellScripts</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="bpcc_wrapper.ps1" />
+    <Compile Include="ChangePAssword.ps1" />
+    <Compile Include="checkeventlog.ps1" />
+    <Compile Include="CountDir.ps1" />
+    <Compile Include="cycle.ps1" />
+    <Compile Include="DC_Logout.ps1" />
+    <Compile Include="DeleteOlder.ps1" />
+    <Compile Include="DeleteOlderExclude.ps1" />
+    <Compile Include="deleteprior15days.ps1" />
+    <Compile Include="EmailInclude.ps1" />
+    <Compile Include="IPHGAReadLog.ps1" />
+    <Compile Include="IPHubGoAnywhere.ps1" />
+    <Compile Include="Library-StringCrypto.ps1" />
+    <Compile Include="logfilezip.ps1" />
+    <Compile Include="LogoutOGO.ps1" />
+    <Compile Include="MITEK01ReadLog.ps1" />
+    <Compile Include="MITEK02ReadLog.ps1" />
+    <Compile Include="MITEK03ReadLog.ps1" />
+    <Compile Include="MITEK04ReadLog.ps1" />
+    <Compile Include="MITEKReadLog.ps1" />
+    <Compile Include="ReadLog.ps1" />
+    <Compile Include="ReadLog10.ps1" />
+    <Compile Include="ReadLog2.ps1" />
+    <Compile Include="ReadLog3.ps1" />
+    <Compile Include="service re-start.ps1" />
+    <Compile Include="SFCountDir.ps1" />
+    <Compile Include="SSi.ps1" />
+    <Compile Include="TestNewReadLog.ps1" />
+    <Compile Include="WhoIsLoggedInWhere.ps1" />
+    <Compile Include="XMLInclude.ps1" />
+    <Compile Include="Zip.ps1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CountDir.XML" />
+    <Content Include="IPHGAReadLog.XML" />
+    <Content Include="Mail.XML" />
+    <Content Include="MailIPHGAReadLog.XML" />
+    <Content Include="MITEK01ReadLog.XML" />
+    <Content Include="MITEK02ReadLog.XML" />
+    <Content Include="MITEK03ReadLog.XML" />
+    <Content Include="MITEK04ReadLog.XML" />
+    <Content Include="MMail.xml" />
+    <Content Include="ReadLog.XML" />
+    <Content Include="ReadLog10.XML" />
+    <Content Include="ReadLog2.XML" />
+    <Content Include="ReadLog3.XML" />
+    <Content Include="SFCountDir.XML" />
+    <Content Include="TestNewReadLog.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Target Name="Build" />
+</Project>

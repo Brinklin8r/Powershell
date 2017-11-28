@@ -1,0 +1,26 @@
+<SettingXMLFile>
+  <Setting>
+    <name>FolderCount</name>
+    <value>1</value>
+  </Setting>
+  <Setting>
+    <name>Threshold</name>
+    <value>1</value>
+  </Setting>
+  <Setting>
+    <name>FileCount</name>
+    <value>0</value>
+  </Setting>
+  <Setting>
+    <name>LastCheck</name>
+    <value>2017-02-22 10:33:06</value>
+  </Setting>
+  <Setting>
+    <name>LastEmail</name>
+    <value>2017-02-22 10:31:08</value>
+  </Setting>
+  <Setting>
+    <name>GoodRead</name>
+    <value>1</value>
+  </Setting>
+</SettingXMLFile>

@@ -1,0 +1,24 @@
+<ReadLogFile>
+  <Setting>
+    <name>ErrorCount</name>
+    <value>0</value>
+  </Setting>
+  <Setting>
+    <name>ResetCount</name>
+    <value>0</value>
+  </Setting>
+  <Setting>
+    <name>LastCheck</name>
+    <value>2017-02-22 10:30:02</value>
+  </Setting>
+  <Setting>
+    <name>LastEmail</name>
+    <value>2017-02-19 02:00:07</value>
+  </Setting>
+  <Setting>
+    <name>GoodRead</name>
+    <value>1</value>
+  </Setting>
+  <Error eValue="&lt;font color=&quot;red&quot;&gt;" />
+  <Error eValue="&lt;/font&gt;" />
+</ReadLogFile>

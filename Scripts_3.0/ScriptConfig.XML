@@ -1,0 +1,25 @@
+<ScriptSettings>
+	<ReadLog>
+		<Name></Name>
+		<ServerName></ServerName>
+		<ShareName></ShareName>
+		<UN></UN>
+		<PW></PW>
+		<FileName></FileName>
+		<SearchString></SearchString>
+		<LogLineFormat></LogLineFormat>
+		<ErrorCount></ErrorCount>
+		<GoodRead></GoodRead>
+		<LastCheck></LastCheck>
+		<LastEmail></LastEmail>
+	</ReadLog>
+	<CountDir>
+		<Name></Name>
+		<IgnoreCount></IgnoreCount>
+		<Threshold></Threshold>
+		<FileCount></FileCount>
+		<GoodRead></GoodRead>
+		<LastCheck></LastCheck>
+		<LastEmail></LastEmail>
+	</CountDir>
+</ScriptSettings>

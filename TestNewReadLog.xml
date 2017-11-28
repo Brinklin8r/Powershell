@@ -1,0 +1,45 @@
+<ReadLogFile>
+	<Setting>
+		<name>ServerName</name>
+		<value>dc-mitek01.dc.bluepoint.com</value>
+	</Setting>
+	<Setting>
+		<name>ShareName</name>
+		<value>logs</value>
+	</Setting>
+	<Setting>
+		<name>UName</name>
+		<value>bp_domain\tamphone</value>
+	</Setting>
+	<Setting>
+		<name>PWord</name>
+		<value>TamPS1221</value>
+	</Setting>
+	<Setting>
+		<name>Type</name>
+		<value>TamPS1221</value>
+	</Setting>
+	<Setting>
+		<name>ErrorCount</name>
+		<value>153</value>
+	</Setting>
+	<Setting>
+		<name>ResetCount</name>
+		<value>0</value>
+	</Setting>
+	<Setting>
+		<name>LastCheck</name>
+		<value>2014-11-13 09:49:58</value>
+	</Setting>
+	<Setting>
+		<name>LastEmail</name>
+		<value>2014-01-13 09:49:58</value>
+	</Setting>
+	<Setting>
+		<name>GoodRead</name>
+		<value>1</value>
+	</Setting>
+	<Error eValue="2014-11-05 15:58:23.363 [9] [(null)] ERROR MtkMobileDeposit.Web.WebService.DepositServiceSSO - System.Data.SqlClient.SqlException: A transport-level error has occurred when receiving results from the server. (provider: TCP Provider, error: 0 - The semaphore timeout period has expired.)" />
+	<Error eValue="&lt;font color=&quot;red&quot;&gt;" />
+	<Error eValue="&lt;/font&gt;" />
+</ReadLogFile>

@@ -1,0 +1,146 @@
+<eMail>
+	<ServerInfo>
+		<name>IPHGAReadLog</name>
+		<mailServer>outlook.office365.com</mailServer>
+		<mailFrom>dcalerts@alogent.com</mailFrom>
+		<mailTo>Support@bluepointsolutions.com</mailTo>
+		<mailSub>Lifeboat Release file count.</mailSub>
+	</ServerInfo>
+	<ServerInfo>
+		<name>CarLar Error</name>
+		<mailServer>outlook.office365.com</mailServer>
+		<mailFrom>dcalerts@alogent.com</mailFrom>
+		<mailTo>Support@bluepointsolutions.com</mailTo>
+		<mailSub>CARLAR errors in the current LOG file.</mailSub>
+	</ServerInfo>
+	<ServerInfo>
+		<name>No CarLar</name>
+		<mailServer>outlook.office365.com</mailServer>
+		<mailFrom>dcalerts@alogent.com</mailFrom>
+		<mailTo>Support@bluepointsolutions.com</mailTo>
+		<mailSub>Unable to parse CARLAR LOG file.</mailSub>
+	</ServerInfo>
+	<ServerInfo>
+		<name>No CarLar Log</name>
+		<mailServer>outlook.office365.com</mailServer>
+		<mailFrom>dcalerts@alogent.com</mailFrom>
+		<mailTo>Support@bluepointsolutions.com</mailTo>
+		<mailSub>Unable to parse CARLAR LOG file.</mailSub>
+	</ServerInfo>
+	<ServerInfo>
+		<name>Recover</name>
+		<mailServer>outlook.office365.com</mailServer>
+		<mailFrom>dcalerts@alogent.com</mailFrom>
+		<mailTo>Support@bluepointsolutions.com</mailTo>
+		<mailSub>FYI - Now able to parse the LOG file.</mailSub>
+	</ServerInfo>
+	<ServerInfo>
+		<name>No Error</name>
+		<mailServer>outlook.office365.com</mailServer>
+		<mailFrom>dcalerts@alogent.com</mailFrom>
+		<mailTo>Support@bluepointsolutions.com</mailTo>
+		<mailSub>FYI - CARLAR Service Restarted.</mailSub>
+	</ServerInfo>
+	<ServerInfo>
+		<name>Many Files</name>
+		<mailServer>outlook.office365.com</mailServer>
+		<mailFrom>dcalerts@alogent.com</mailFrom>
+		<mailTo>Support@bluepointsolutions.com</mailTo>
+		<mailSub>Check IPFArchive Import Service on DC-FS01.DC.BLUEPOINT.COM</mailSub>
+	</ServerInfo>
+  <ServerInfo>
+    <name>SF Many Files</name>
+    <mailServer>outlook.office365.com</mailServer>
+    <mailFrom>dcalerts@alogent.com</mailFrom>
+    <mailTo>Support@bluepointsolutions.com</mailTo>
+    <mailSub>Check GoAnywhere Service for SchoolsFirst Posting Files</mailSub>
+  </ServerInfo>
+  <ServerInfo>
+    <name>SF Many Posting Files 90</name>
+    <mailServer>outlook.office365.com</mailServer>
+    <mailFrom>dcalerts@alogent.com</mailFrom>
+    <mailTo>Support@bluepointsolutions.com</mailTo>
+    <mailSub>Check Posting Service for SchoolsFirst DC-App90</mailSub>
+  </ServerInfo>
+  <ServerInfo>
+    <name>SF Many Posting Files 91</name>
+    <mailServer>outlook.office365.com</mailServer>
+    <mailFrom>dcalerts@alogent.com</mailFrom>
+    <mailTo>Support@bluepointsolutions.com</mailTo>
+    <mailSub>Check Posting Service for SchoolsFirst DC-App91</mailSub>
+  </ServerInfo>
+    <ServerInfo>
+    <name>SF Many Posting Files 92</name>
+    <mailServer>outlook.office365.com</mailServer>
+    <mailFrom>dcalerts@alogent.com</mailFrom>
+    <mailTo>Support@bluepointsolutions.com</mailTo>
+    <mailSub>Check Posting Service for SchoolsFirst DC-App92</mailSub>
+  </ServerInfo>
+  <ServerInfo>
+		<name>Error Files</name>
+		<mailServer>outlook.office365.com</mailServer>
+		<mailFrom>dcalerts@alogent.com</mailFrom>
+		<mailTo>Support@bluepointsolutions.com</mailTo>
+		<mailSub>Check IPFArchive import folders on DC-FS01.DC.BLUEPOINT.COM.</mailSub>
+	</ServerInfo>
+	<ServerInfo>
+		<name>No Files</name>
+		<mailServer>outlook.office365.com</mailServer>
+		<mailFrom>dcalerts@alogent.com</mailFrom>
+		<mailTo>Support@bluepointsolutions.com</mailTo>
+		<mailSub>Unable to Check IPFArchive import folder on DC-FS01.DC.BLUEPOINT.COM.</mailSub>
+	</ServerInfo>
+  <ServerInfo>
+    <name>SF No Files</name>
+    <mailServer>outlook.office365.com</mailServer>
+    <mailFrom>dcalerts@alogent.com</mailFrom>
+    <mailTo>Support@bluepointsolutions.com</mailTo>
+    <mailSub>Unable to check the SchoolsFirst Posting Files folder on DC-FS01.DC.BLUEPOINT.COM.</mailSub>
+  </ServerInfo>
+    <ServerInfo>
+    <name>SF No Posting Files</name>
+    <mailServer>outlook.office365.com</mailServer>
+    <mailFrom>dcalerts@alogent.com</mailFrom>
+    <mailTo>Support@bluepointsolutions.com</mailTo>
+    <mailSub>Unable to check for errors of the SchoolsFirst Posting Service.</mailSub>
+  </ServerInfo>
+	<ServerInfo>
+		<name>No SSOLog</name>
+		<mailServer>outlook.office365.com</mailServer>
+		<mailFrom>dcalerts@alogent.com</mailFrom>
+		<mailTo>Support@bluepointsolutions.com</mailTo>
+		<mailSub>Unable to Check SSO Log.</mailSub>
+	</ServerInfo>
+	<ServerInfo>
+		<name>Files Recovery</name>
+		<mailServer>outlook.office365.com</mailServer>
+		<mailFrom>dcalerts@alogent.com</mailFrom>
+		<mailTo>Support@bluepointsolutions.com</mailTo>
+		<mailSub>FYI - Now able to connect to IPFArchive on DC-FS01.DC.BLUEPOINT.COM.</mailSub>
+	</ServerInfo>
+  <ServerInfo>
+    <name>SF Files Recovery</name>
+    <mailServer>outlook.office365.com</mailServer>
+    <mailFrom>dcalerts@alogent.com</mailFrom>
+    <mailTo>Support@bluepointsolutions.com</mailTo>
+    <mailSub>FYI - Now able to check the SchoolsFirst Posting Files folde on DC-FS01.DC.BLUEPOINT.COM.</mailSub>
+  </ServerInfo>
+  <ServerInfo>
+    <name>SF Posting Files Recovery</name>
+    <mailServer>outlook.office365.com</mailServer>
+    <mailFrom>dcalerts@alogent.com</mailFrom>
+    <mailTo>Support@bluepointsolutions.com</mailTo>
+    <mailSub>FYI - Now able to check for errors of the SchoolsFirst Posting Service.</mailSub>
+  </ServerInfo>
+	<ServerInfo>
+		<name>Channel Error</name>
+		<mailServer>outlook.office365.com</mailServer>
+		<mailFrom>dcalerts@alogent.com</mailFrom>
+		<mailTo>Support@bluepointsolutions.com</mailTo>
+		<mailSub>Channel errors in the current SSO Processor LOG file.</mailSub>
+	</ServerInfo>
+	<User>
+		<UN>dcalerts@alogent.com</UN>
+		<PW>25dcGH$j</PW>
+	</User>
+</eMail>

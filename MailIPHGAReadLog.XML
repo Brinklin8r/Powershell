@@ -1,0 +1,13 @@
+<eMail>
+	<ServerInfo>
+		<name>IPHGAReadLog</name>
+		<mailServer>m.outlook.com</mailServer>
+		<mailFrom>tamphone@bluepointsolutions.com</mailFrom>
+		<mailTo>Support@bluepointsolutions.com</mailTo>
+		<mailSub>CARLAR errors in the current LOG file.</mailSub>
+	</ServerInfo>
+	<User>
+		<UN>tamphone@bluepointsolutions.com</UN>
+		<PW>TamPS1221</PW>
+	</User>
+</eMail>
