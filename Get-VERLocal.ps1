@@ -1,6 +1,6 @@
 ################################################################################
 #
-# Get all installed .NET and the currenet Powershell versions, along with all 
+# Get all installed .NET and the current Powershell versions, along with all 
 #   the local User Groups and users.   
 #	This info is saved into a txt file on the users desktop.
 #
@@ -21,6 +21,7 @@
 # Variable Declarations
 ################################################################################
 $FPath = $env:USERPROFILE + "\desktop\" + $env:computername + "_localaudit_" + (Get-Date).ToString("yyyyMMdd") + ".txt" 
+# Put the output file onto YOUR desktop
 
 ################################################################################
 # Get ALL .NET Versions installed.
@@ -44,13 +45,13 @@ Select-Object PSChildName, Version, Release, @{
       }
     }
 }|
-Out-File -Append -filepath $FPath
+Out-File -Append -filePath $FPath
 
 ################################################################################
 # Get Powershell version installed.
 ################################################################################
 $PSVersionTable.PSVersion |
-Out-File -Append -filepath $FPath
+Out-File -Append -filePath $FPath
 
 ################################################################################
 # Get Local Groups and Users.
@@ -65,4 +66,4 @@ $members = $Group.psbase.Invoke("Members")
 ($members | ForEach-Object {$_.GetType().InvokeMember("Name", 'GetProperty', $null, $_, $null)}) -join ";"}
 }}|
 Select-Object Name,Members |
-Out-File -Append -filepath $FPath -width 200
+Out-File -Append -filePath $FPath -width 200

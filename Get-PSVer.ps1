@@ -12,7 +12,9 @@
 #	Chris Brinkley
 #
 # Version:
-#   1.1.0   - 11/20/2017 -  Parameter-ization
+#   1.2.0   - 11/28/2017 -  Added Help text
+#                           Code and Comment clean-up
+#   1.1.0   - 11/20/2017 -  Parameterization
 #                           Added ability to enter you own credentials.
 #
 #	1.0.0 	- 11/15/2017 -	Initial Build.
@@ -29,8 +31,8 @@ Param(
 
     [System.Management.Automation.PSCredential]$Credential,
     [string]$DomainServer = "DC.Bluepoint.COM",
-    # Should be DC.Bluepoint.COM, but Production DC servers donot have access to
-    #   query their domain controler.
+    # Should be DC.Bluepoint.COM, but Production DC servers do not have access to
+    #   query their domain controller.
     
     [switch]$Help
 )
@@ -44,9 +46,9 @@ $OUFilter = "Name -like '*" + $OUNameFilter +"*'"
 # Main Program
 ################################################################################
 if ($Help){
-    Write-Host "Poor Human needs help"
+    Write-Host "Hope this Helps ;)"
     Write-Host "====================="
-    Write-Host "-OUNameFilter <Manditory> [STRING]  'The OUs will use this string to do a LIKE search.'"
+    Write-Host "-OUNameFilter <Mandatory> [STRING]  'The OUs will use this string to do a LIKE search.'"
     Write-Host "-Credential   <Optional>  [STRING]  'UserName to query the Computer.  Must have admin rights on the Computer'"
     Write-Host "-DomainServer <Optional>  [STRING]  'Server name of Domain Controller to query.'"
     Write-Host "-Help         <Optional>"
@@ -63,6 +65,7 @@ if ($Help){
 if ($Credential) {
     $Cred = $Credential
 } else {
+    # If no credentials are Supplied use TamPhone
     $UserName = "BP_Domain\TamPhone"
     $PWord = ConvertTo-SecureString -String "TamPS1221" -AsPlainText -Force
     $Cred = New-Object -TypeName "System.Management.Automation.PSCredential" -ArgumentList $UserName, $PWord
@@ -71,7 +74,7 @@ if ($Credential) {
 $OUs = Get-ADOrganizationalUnit -Filter $OUFilter -Server $DomainServer |  Select-Object -ExpandProperty DistinguishedName
 
 foreach($OU in $OUs){
-    $ComputerName = Get-ADComputer -SearchBase $OU -Filter '*' -Server $DomainServer -Propert Name | Select-Object -ExpandProperty DNSHostName
+    $ComputerName = Get-ADComputer -SearchBase $OU -Filter '*' -Server $DomainServer -Property Name | Select-Object -ExpandProperty DNSHostName
     if($ComputerName){
         foreach($computer in $ComputerName){
             Invoke-Command -ComputerName $computer -Credential $Cred -ScriptBlock {$PSVersionTable.PSVersion} -erroraction 'silentlycontinue'  | Export-Csv -Append -Path "PSVersion.CSV" -force 

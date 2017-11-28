@@ -1,0 +1,22 @@
+<ReadLogFile>
+  <Setting>
+    <name>ErrorCount</name>
+    <value>0</value>
+  </Setting>
+  <Setting>
+    <name>ResetCount</name>
+    <value>0</value>
+  </Setting>
+  <Setting>
+    <name>LastCheck</name>
+    <value>2017-11-27 19:05:04</value>
+  </Setting>
+  <Setting>
+    <name>LastEmail</name>
+    <value>2017-11-17 19:05:17</value>
+  </Setting>
+  <Setting>
+    <name>GoodRead</name>
+    <value>1</value>
+  </Setting>
+</ReadLogFile>
