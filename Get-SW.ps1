@@ -101,7 +101,7 @@ Function Get-InstalledSoftware
 					}
 				}
 			}
-			$MasterKeys = ($MasterKeys | Where {$_.Name -ne $Null -AND $_.SystemComponent -ne "1" -AND $_.ParentKeyName -eq $Null} | select Name,Version,ComputerName,UninstallCommand | sort Name)
+			$MasterKeys = ($MasterKeys | Where-Object {$_.Name -ne $Null -AND $_.SystemComponent -ne "1" -AND $_.ParentKeyName -eq $Null} | Select-Object Name,Version,ComputerName,UninstallCommand | Sort-Object Name)
 			$MasterKeys
 		}
 	}
