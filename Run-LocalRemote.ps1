@@ -66,7 +66,8 @@ if ($Credential) {
 $OUs = Get-ADOrganizationalUnit -Filter $OUFilter -Server $DomainServer |  Select-Object -ExpandProperty DistinguishedName
 
 foreach($OU in $OUs){
-    $ComputerName = Get-ADComputer -SearchBase $OU -Filter { OperatingSystem -Like '*Windows Server 2012*' }  -Server $DomainServer -Property Name | Select-Object -ExpandProperty DNSHostName
+#   $ComputerName = Get-ADComputer -SearchBase $OU -Filter { OperatingSystem -Like '*Windows Server 2012*' }  -Server $DomainServer -Property Name | Select-Object -ExpandProperty DNSHostName
+    $ComputerName = Get-ADComputer -SearchBase $OU -Filter '*'  -Server $DomainServer -Property Name | Select-Object -ExpandProperty DNSHostName
     if($ComputerName){
         foreach($computer in $ComputerName){
             Invoke-Command -ComputerName $computer -Credential $Cred ${function:Get-SpeculationControlSettings} -erroraction 'silentlycontinue'  | Export-Csv -noType -Append -Path "LocalRemote.CSV" -force 
