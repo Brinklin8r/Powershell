@@ -2,7 +2,7 @@
 #
 # Get Powershell version:
 #	Queries AD and returns a list og OUs that match the search terms.
-#   Queries each OU returned to get a list of the Computers it contains.   
+#   Queries each OU returned to get a list of the Computers it contains.
 #	Queries each Computer and returns its Powershell/WMF version
 #   Puts that list into a CSV.
 #
@@ -33,7 +33,7 @@ Param(
     [string]$DomainServer = "DC.Bluepoint.COM",
     # Should be DC.Bluepoint.COM, but Production DC servers do not have access to
     #   query their domain controller.
-    
+
     [switch]$Help
 )
 
@@ -77,9 +77,9 @@ foreach($OU in $OUs){
     $ComputerName = Get-ADComputer -SearchBase $OU -Filter '*' -Server $DomainServer -Property Name | Select-Object -ExpandProperty DNSHostName
     if($ComputerName){
         foreach($computer in $ComputerName){
-            Invoke-Command -ComputerName $computer -Credential $Cred -ScriptBlock {$PSVersionTable.PSVersion} -erroraction 'silentlycontinue'  | Export-Csv -Append -Path "PSVersion.CSV" -force 
+            Invoke-Command -ComputerName $computer -Credential $Cred -ScriptBlock {$PSVersionTable.PSVersion} -erroraction 'silentlycontinue'  | Export-Csv -Append -Path "PSVersion.CSV" -force
             # Command is run on each Computer so you need to make sure that
-            #   PSRemoting is enabled and that the user has admin access.  
+            #   PSRemoting is enabled and that the user has admin access.
         }
-    } 
+    }
 }
