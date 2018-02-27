@@ -31,8 +31,8 @@ Param(
 
     [System.Management.Automation.PSCredential]$Credential,
     [string]$DomainServer = "DC.Bluepoint.COM",
-    # Should be DC.Bluepoint.COM, but Production DC servers do not have access to
-    #   query their domain controller.
+    # Should be DC.Bluepoint.COM, but Production DC servers do not have access
+    #   to query their domain controller.
 
     [switch]$Help
 )
