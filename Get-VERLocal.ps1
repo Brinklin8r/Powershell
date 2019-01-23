@@ -13,6 +13,7 @@
 #	Chris Brinkley
 #
 # Version:
+# 1.0.1   - 01/23/2019 -  .NET 4.7.2 added
 #	1.0.0 	- 11/15/2017 -	Initial Build.
 #
 ################################################################################
@@ -41,7 +42,8 @@ Select-Object PSChildName, Version, Release, @{
         "394802|394806" { [Version]"4.6.2" }
         "460798|460805" { [Version]"4.7" }
         "461308|461310" { [Version]"4.7.1" }
-        {$_ -gt 461310} { [Version]"Undocumented 4.7.x or higher, please update script" }
+        "461808|461814" { [Version]"4.7.2" }
+        {$_ -gt 461814} { [Version]"Undocumented 4.7.x or higher, please update script" }
       }
     }
 }|

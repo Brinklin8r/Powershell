@@ -13,7 +13,6 @@
 #	Chris Brinkley
 #
 # Version:
-#   1.3.0   - 01/**/2019 -  Updated for Tierpoint DataCenter
 #   1.2.0   - 11/28/2017 -  Added Help text
 #                           Code and Comment clean-up
 #   1.1.0   - 11/20/2017 -  Parameterization
@@ -31,7 +30,9 @@ Param(
         [string]$OUNameFilter = @(),
 
     [System.Management.Automation.PSCredential]$Credential,
-    [string]$DomainServer = "Prod-DC01.AlogentCloud.Local",
+    [string]$DomainServer = "DC.Bluepoint.COM",
+    # Should be DC.Bluepoint.COM, but Production DC servers do not have access to
+    #   query their domain controller.
     
     [switch]$Help
 )
@@ -65,8 +66,8 @@ if ($Credential) {
     $Cred = $Credential
 } else {
     # If no credentials are Supplied use TamPhone
-    $UserName = "ServiTPFW@AlogentCloud.Local"
-    $PWord = ConvertTo-SecureString -String "&sKha4chUpUQVuF4@2" -AsPlainText -Force
+    $UserName = "BP_Domain\TamPhone"
+    $PWord = ConvertTo-SecureString -String "TamPS1221" -AsPlainText -Force
     $Cred = New-Object -TypeName "System.Management.Automation.PSCredential" -ArgumentList $UserName, $PWord
 }
 
