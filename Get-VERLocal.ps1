@@ -1,6 +1,6 @@
 ################################################################################
 #
-# Get all installed .NET and the current Powershell versions, along with all 
+# Get all installed .NET and the currenet Powershell versions, along with all 
 #   the local User Groups and users.   
 #	This info is saved into a txt file on the users desktop.
 #
@@ -13,7 +13,6 @@
 #	Chris Brinkley
 #
 # Version:
-# 1.0.1   - 01/23/2019 -  .NET 4.7.2 added
 #	1.0.0 	- 11/15/2017 -	Initial Build.
 #
 ################################################################################
@@ -22,7 +21,6 @@
 # Variable Declarations
 ################################################################################
 $FPath = $env:USERPROFILE + "\desktop\" + $env:computername + "_localaudit_" + (Get-Date).ToString("yyyyMMdd") + ".txt" 
-# Put the output file onto YOUR desktop
 
 ################################################################################
 # Get ALL .NET Versions installed.
@@ -43,17 +41,18 @@ Select-Object PSChildName, Version, Release, @{
         "460798|460805" { [Version]"4.7" }
         "461308|461310" { [Version]"4.7.1" }
         "461808|461814" { [Version]"4.7.2" }
-        {$_ -gt 461814} { [Version]"Undocumented 4.7.x or higher, please update script" }
+        "528040|528049" { [Version]"4.8" }       
+        {$_ -gt 528049} { [Version]"Undocumented 4.8.x or higher, please update script" }
       }
     }
 }|
-Out-File -Append -filePath $FPath
+Out-File -Append -filepath $FPath
 
 ################################################################################
 # Get Powershell version installed.
 ################################################################################
 $PSVersionTable.PSVersion |
-Out-File -Append -filePath $FPath
+Out-File -Append -filepath $FPath
 
 ################################################################################
 # Get Local Groups and Users.
@@ -68,4 +67,4 @@ $members = $Group.psbase.Invoke("Members")
 ($members | ForEach-Object {$_.GetType().InvokeMember("Name", 'GetProperty', $null, $_, $null)}) -join ";"}
 }}|
 Select-Object Name,Members |
-Out-File -Append -filePath $FPath -width 200
+Out-File -Append -filepath $FPath -width 200
