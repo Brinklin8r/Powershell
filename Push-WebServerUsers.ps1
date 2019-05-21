@@ -62,7 +62,7 @@ $mycreds = New-Object System.Management.Automation.PSCredential (".\chris.brinkl
 
 
 
-$RemoteComputers = $DigitalTestComputers
+$RemoteComputers = $DigitalTestComputers + $DigitalLiveComputers 
 
 
 ForEach ($Computer in $RemoteComputers) {
