@@ -90,11 +90,7 @@ function AddLUser ([string] $UName, [string] $Group, [string] $FN, [string] $Des
 ################################################################################
 # Main
 ################################################################################
-$done = AddLUser 'chris.brinkley' 'Administrators' 'Chris Brinkley' 'Datacenter Admin'
-$done = AddLUser 'judit.monk' 'Administrators' 'Judit Monk' 'Datacenter Admin'
-$done = AddLUser 'TPAdminWG' 'Administrators' 'Tierpoint Local Admin' 'Tierpoint Local Admin'
-$done = AddLUser 'estela.castro-garcia' 'Administrators' 'Estela Castro-Garcia' 'Datacenter Admin'
-$done = AddLUser 'justin.middle' 'Administrators' 'Justin Middle' 'Datacenter Admin'
+#$done = AddLUser 'USERNAME' 'GROUP' 'DISPLAY NAME' 'DESCRIPTION'
 $done = AddLUser 'allen.davis' 'Administrators' 'Allen Davis' 'Implementations'
 $done = AddLUser 'jason.bruton' 'Administrators' 'Jason Bruton' 'Implementations'
 $done = AddLUser 'scott.georgens' 'Administrators' 'Scott Georgens' 'Implementations'
@@ -107,4 +103,4 @@ $done = AddLUser 'emily.lozada' 'Remote Desktop Users' 'Emily Lozada' 'Support'
 $done = AddLUser 'roberto.nunez' 'Remote Desktop Users' 'Roberto Nunez' 'Support'
 $done = AddLUser 'ron.baca' 'Remote Desktop Users' 'Ron Baca' 'Support'
 $done = AddLUser 'jeff.duran' 'Remote Desktop Users' 'Jeff Duran' 'Support'
-#$done = AddLUser 'USERNAME' 'GROUP' 'DISPLAY NAME' 'DESCRIPTION'
+

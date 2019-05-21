@@ -90,11 +90,7 @@ function AddLUser ([string] $UName, [string] $Group, [string] $FN, [string] $Des
 ################################################################################
 # Main
 ################################################################################
-$done = AddLUser 'chris.brinkley' 'Administrators' 'Chris Brinkley' 'Datacenter Admin'
-$done = AddLUser 'judit.monk' 'Administrators' 'Judit Monk' 'Datacenter Admin'
-$done = AddLUser 'clay.stubbs' 'Administrators' 'Clay Stubbs' 'Datacenter Admin'
 #$done = AddLUser 'USERNAME' 'GROUP' 'DISPLAY NAME' 'DESCRIPTION'
-$done = AddLUser 'TPAdminWG' 'Administrators' 'Tierpoint Local Admin' 'Tierpoint Local Admin'
 $done = AddLUser 'Jon.Guenther' 'Administrators' 'Jon Guenther' 'Support'
 $done = AddLUser 'Kirk.Henderson' 'Administrators' 'Kirk Henderson' 'Support'
 $done = AddLUser 'Richard.Hay' 'Administrators' 'Richard Hay' 'Support'
