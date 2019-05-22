@@ -49,6 +49,31 @@ $DigitalLiveComputers = @("10.110.20.11",	#Web-SKONE01
                         "10.110.35.14",	    #Web-CACST04
 "end")
 
+$LFITestComputers = @("10.110.100.100",     #CAT-Web-LFI01
+                    "10.110.100.101",       #CAT-Web-LFI02
+"end")
+
+$LFILiveComputers = @("10.110.5.151",       #Prod-Web-RDCA01
+                    "10.110.5.150",         #Prod-Web-RDUS01
+"end")
+
+$ECMLiveComputers = @("10.110.8.10",        #Prod-Web-ECM01
+                    "10.110.8.11",          #Prod-Web-ECM02
+"end")
+
+$IPLiveComputers = @("10.110.5.10",         #Prod-Web-FP01
+                    "10.110.5.12",          #Prod-Web-IPF01
+                    "10.110.5.13",          #Prod-Web-LIC01
+                    "10.110.5.14",          #Prod-Web-Main01
+                    "10.110.5.15",          #Prod-Web-Main02
+                    "10.110.5.16",          #Prod-Web-Main03
+                    "10.110.5.20",          #Prod-Web-Main21
+                    "10.110.5.18",          #Prod-Web-SF01
+                    "10.110.5.19",          #Prod-Web-SF02
+"end")
+
+$secpasswd = ConvertTo-SecureString "C@rtman8@8" -AsPlainText -Force
+$mycreds = New-Object System.Management.Automation.PSCredential (".\chris.brinkley", $secpasswd)
 
 
 
@@ -56,21 +81,26 @@ $DigitalLiveComputers = @("10.110.20.11",	#Web-SKONE01
 
 
 $scriptPath = "c:\Users\Christopher.Brinkley\Desktop\Set-USRSLocal-DigitalTest.ps1"
-$secpasswd = ConvertTo-SecureString "C@rtman8@8" -AsPlainText -Force
-$mycreds = New-Object System.Management.Automation.PSCredential (".\chris.brinkley", $secpasswd)
-
-
-
 
 $RemoteComputers = $DigitalTestComputers + $DigitalLiveComputers 
+
+
+
+
+
+
+
 
 
 ForEach ($Computer in $RemoteComputers) {
     Try {
         $Session = New-PSSession -ComputerName $Computer -Credential $mycreds -ErrorAction Stop
         Copy-Item $scriptPath -Destination "C:\Alogent Software" -ToSession $Session 
-
+        # Copy Script
         Invoke-Command -FilePath $scriptPath -ComputerName $Computer -Credential $mycreds -ErrorAction Stop
+        # Run Script
+        #Copy-Item -Path "C:\Users\chris.brinkley\Desktop\*.txt" -Destination "C:\Brink\Files" -FromSession $Session
+        # Get Output file
         Add-Content Completed-Computers.txt $Computer
     }
     Catch {
