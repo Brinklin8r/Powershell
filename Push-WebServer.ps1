@@ -1,18 +1,18 @@
-$DigitalTestComputers = @("10.110.20.10",  #Test-Web-SKONE	
-                        "10.110.21.10",    #Test-Web-MUTSV	 
-                        "10.110.22.10",    #Test-Web-POPA	
-                        "10.110.23.10",    #Test-Web-CRNST	
-                        "10.110.24.10",    #Test-Web-UKENT	
-                        "10.110.25.10",    #Test-Web-WFISH	
-                        "10.110.27.10",    #Test-Web-FPART	
-                        "10.110.28.10",    #Test-Web-PNEST	
-                        "10.110.29.10",    #Test-Web-SPAGE	
-                        "10.110.30.10",    #Test-Web-NASAU	
-                        "10.110.31.10",    #Test-Web-INTEX	
-                        "10.110.32.10",    #Test-Web-WNSTH	
-                        "10.110.33.10",    #Test-Web-PSDNA	
-                        "10.110.34.10",    #Test-Web-TNORTH	
-                        "10.110.35.10",    #Test-Web-CACST	
+$DigitalTestComputers = @("10.110.20.10",   #Test-Web-SKONE	
+                        "10.110.21.10",     #Test-Web-MUTSV	 
+                        "10.110.22.10",     #Test-Web-POPA	
+                        "10.110.23.10",     #Test-Web-CRNST	
+                        "10.110.24.10",     #Test-Web-UKENT	
+                        "10.110.25.10",     #Test-Web-WFISH	
+                        "10.110.27.10",     #Test-Web-FPART	
+                        "10.110.28.10",     #Test-Web-PNEST	
+                        "10.110.29.10",     #Test-Web-SPAGE	
+                        "10.110.30.10",     #Test-Web-NASAU	
+                        "10.110.31.10",     #Test-Web-INTEX	
+                        "10.110.32.10",     #Test-Web-WNSTH	
+                        "10.110.33.10",     #Test-Web-PSDNA	
+                        "10.110.34.10",     #Test-Web-TNORTH	
+                        "10.110.35.10",     #Test-Web-CACST	
 "end")
 
 $DigitalLiveComputers = @("10.110.20.11",	#Web-SKONE01
